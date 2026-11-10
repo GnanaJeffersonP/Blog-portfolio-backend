@@ -9,7 +9,8 @@ const app = express();
 app.use(cors())
 
 // Middleware
-app.use(bodyParser.json());
+// Middleware
+app.use(express.json());
 
 // MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/blogDB').then(()=>{
